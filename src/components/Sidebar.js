@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react'
 import "../styles/Sidebar.css"
 import TwitterIcon from "@material-ui/icons/Twitter"
@@ -11,13 +12,14 @@ import PermIdentityIcon from "@material-ui/icons/PermIdentity"
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz" 
 
 import SidebarOption from './SidebarOption'
+import { Button } from '@material-ui/core'
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <TwitterIcon />
 
-      <SidebarOption Icon={HomeIcon} text="Home"/>
+      <SidebarOption active Icon={HomeIcon} text="Home"/>
       <SidebarOption Icon={SearchIcon} text="Explore"/>
       <SidebarOption Icon={NotificationsNoneIcon} text="Notifications"/>
       <SidebarOption Icon={MailOutlineIcon} text="Messages"/>
@@ -26,7 +28,7 @@ function Sidebar() {
       <SidebarOption Icon={PermIdentityIcon} text="Profile"/>
       <SidebarOption Icon={MoreHorizIcon} text="More"/>
 
-
+      <Button variant="outlined" className="sidebar__tweet" fullWidth>Tweet</Button>
 
     </div>
   )
