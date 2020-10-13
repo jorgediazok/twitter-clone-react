@@ -8,11 +8,10 @@ function Tweetbox() {
       <form>
         <div className="tweetBox__input">
         <Avatar src="https://randomuser.me/api/portraits/men/28.jpg"/>
-        <input type="text" placeholder="What is happening?"/>
-        <input type="text" placeholder="Enter image URL"/>
-
+        <input type="text" placeholder="What's happening?"/>
         </div>
-        <Button>Tweet</Button>
+        <input type="text" placeholder="Optional: Enter image URL" className="tweetBox__imageInput"/>
+        <Button className="tweetBox__tweetButton">Tweet</Button>
       </form>
     </div>
   )
