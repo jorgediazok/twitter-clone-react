@@ -9,6 +9,11 @@
   display: none;
 }
 
+.feed {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .feed__header {
   position: sticky;
   top: 0;
