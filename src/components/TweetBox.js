@@ -5,6 +5,7 @@ import db from "../firebase"
 
 function Tweetbox() {
 
+
   const [tweetMessage, setTweetMessage] = useState("");
   const [tweetImage, setTweetImage] = useState("");
 
@@ -17,6 +18,8 @@ function Tweetbox() {
       text: tweetMessage,
       image: tweetImage,
       avatar: "https://randomuser.me/api/portraits/men/28.jpg",
+
+
 
     });
     setTweetMessage("");
